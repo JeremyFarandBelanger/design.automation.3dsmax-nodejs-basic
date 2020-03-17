@@ -21,10 +21,10 @@
             "verb": "put",
             "description": "Output FBX file",
             "required": true,
-            "localName": "output.fbx"
+            "localName": "output.jpg"
         }
     },
     "settings": {
-        "script": "helloFromAppBundleScript(); exportFile (sysInfo.currentdir + \"/output.fbx\") #noPrompt using:FBXEXP"
+        "script": "render outputfile:(sysInfo.currentdir + \"/output.jpg\")"
     }
 }
